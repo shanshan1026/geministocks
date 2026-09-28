@@ -41,12 +41,7 @@
     "accountName": "小声读书",
     "accountNameEn": "小声读书",
     "endText": "",
-    "openSource": "开源于 GitHub",
-    "deployOwn": "部署你自己的实例：",
-    "deployVercel": "Deploy to Vercel",
-    "deployVercelHint": "一键克隆仓库并部署到 Vercel（推荐，API 代理开箱即用）",
-    "deployCloudflare": "Deploy to Cloudflare",
-    "deployCloudflareHint": "部署到 Cloudflare（需自行配置 API 代理）"
+    "openSource": "开源于 GitHub"
   },
   "imageModal": {
     "title": "欢迎关注\"小声读书\""
@@ -140,8 +135,8 @@
   },
   "analysisInput": {
     "title": "输入您要分析的股票",
-    "description": "输入公司名称或股票代码，也可以粘贴相关新闻或网址。例如：英伟达（NVDA）、贵州茅台（600519），或一篇最新财报新闻。",
-    "placeholder": "例如：NVDA、英伟达最新财报，或 https://example.com/news...",
+    "description": "输入公司名称或股票代码，也可以粘贴相关新闻或网址。例如：英伟达（NVDA）、Meta（META）、贵州茅台（600519），或一篇最新财报新闻。",
+    "placeholder": "例如：NVDA、META、英伟达最新财报，或 https://example.com/news...",
     "button": "开始分析 ✨",
     "buttonLoading": "分析中... ⏳"
   },

@@ -41,12 +41,7 @@
     "accountName": "Xiaosheng Dushu",
     "accountNameEn": "Xiaosheng Dushu",
     "endText": "",
-    "openSource": "Open Source on GitHub",
-    "deployOwn": "Deploy your own:",
-    "deployVercel": "Deploy to Vercel",
-    "deployVercelHint": "One-click clone and deploy to Vercel (recommended, API proxies work out of the box)",
-    "deployCloudflare": "Deploy to Cloudflare",
-    "deployCloudflareHint": "Deploy to Cloudflare (API proxies require manual setup)"
+    "openSource": "Open Source on GitHub"
   },
   "imageModal": {
     "title": "Welcome to follow \"Xiaosheng Dushu\""
@@ -140,8 +135,8 @@
   },
   "analysisInput": {
     "title": "Enter Your Stock for Analysis",
-    "description": "Enter a company name or ticker, paste related news, or add a relevant URL. For example: NVIDIA (NVDA), Kweichow Moutai (600519), or a recent earnings article.",
-    "placeholder": "Example: NVDA, NVIDIA earnings outlook, or https://example.com/news...",
+    "description": "Enter a company name or ticker, paste related news, or add a relevant URL. For example: NVIDIA (NVDA), Meta (META), Kweichow Moutai (600519), or a recent earnings article.",
+    "placeholder": "Example: NVDA, META, NVIDIA earnings outlook, or https://example.com/news...",
     "button": "Start Analysis ✨",
     "buttonLoading": "Analyzing... ⏳"
   },

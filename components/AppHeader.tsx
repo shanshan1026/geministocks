@@ -3,15 +3,16 @@ import { AcademicCapIcon } from './icons/Icons';
 import LanguageSwitcher from './LanguageSwitcher';
 import { useI18n } from '../hooks/useI18n';
 
-const RadarIcon = (props: React.SVGProps<SVGSVGElement>) => (
+// Heroicons "presentation-chart-line" (MIT): a compact stock-trend mark.
+const StockTrendIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-    <path d="M12 3a9 9 0 100 18 9 9 0 000-18z" stroke="currentColor" strokeOpacity="0.3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M12 8a4 4 0 100 8 4 4 0 000-8z" stroke="currentColor" strokeOpacity="0.5" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M12 3v2" stroke="currentColor" strokeOpacity="0.3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M21 12h-2" stroke="currentColor" strokeOpacity="0.3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M12 21v-2" stroke="currentColor" strokeOpacity="0.3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M3 12h2" stroke="currentColor" strokeOpacity="0.3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M12 12L7 7" className="radar-sweep" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+    <path
+      d="M3.75 3V14.25C3.75 15.4926 4.75736 16.5 6 16.5H8.25M3.75 3H2.25M3.75 3H20.25M20.25 3H21.75M20.25 3V14.25C20.25 15.4926 19.2426 16.5 18 16.5H15.75M8.25 16.5H15.75M8.25 16.5L7.25 19.5M15.75 16.5L16.75 19.5M16.75 19.5L17.25 21M16.75 19.5H7.25M7.25 19.5L6.75 21M7.5 12L10.5 9L12.6476 11.1476C13.6542 9.70301 14.9704 8.49023 16.5 7.60539"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
   </svg>
 );
 
@@ -30,7 +31,7 @@ const AppHeader: React.FC<AppHeaderProps> = ({ apiConfigured, onOpenUserGuide, o
         <div className="flex items-center justify-between h-16">
           {/* Left side: Logo & Title */}
           <div className="flex min-w-0 items-center gap-x-2 sm:gap-x-3">
-            <RadarIcon className="h-7 w-7 shrink-0 text-black sm:h-8 sm:w-8" />
+            <StockTrendIcon aria-hidden="true" className="h-7 w-7 shrink-0 text-emerald-700 sm:h-8 sm:w-8" />
             <h1 className="truncate whitespace-nowrap text-base font-semibold text-gray-800 sm:text-xl">
               {t('header.title')}
             </h1>

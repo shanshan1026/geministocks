@@ -386,33 +386,6 @@ const MainPage: React.FC = () => {
           </main>
           
           <footer className="text-center mt-16 py-8 border-t border-gray-200">
-             <div className="flex flex-wrap justify-center items-center gap-3 mb-6">
-                <span className="text-sm text-gray-500">{t('footer.deployOwn')}</span>
-                <a
-                  href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fyaoleifly%2Fgeministocks"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-full bg-black text-white hover:bg-gray-800 transition-colors"
-                  title={t('footer.deployVercelHint')}
-                >
-                  <svg viewBox="0 0 76 65" className="w-3 h-3" fill="currentColor" aria-hidden="true">
-                    <path d="M37.5274 0L75.0548 65H0L37.5274 0Z" />
-                  </svg>
-                  {t('footer.deployVercel')}
-                </a>
-                <a
-                  href="https://deploy.workers.cloudflare.com/?url=https://github.com/yaoleifly/geministocks"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-full border border-gray-300 text-gray-700 hover:border-black hover:text-black transition-colors"
-                  title={t('footer.deployCloudflareHint')}
-                >
-                  <svg viewBox="0 0 24 24" className="w-3.5 h-3.5" fill="currentColor" aria-hidden="true">
-                    <path d="M16.5088 16.8447c.1475-.5068.0908-.9707-.1553-1.3154-.2246-.3164-.6045-.5-1.0664-.5205l-8.6807-.1123a.1559.1559 0 0 1-.1333-.0713c-.0283-.042-.0351-.0986-.0205-.1553.0283-.084.1123-.1484.2031-.1552l8.7578-.1123c1.0391-.0489 2.1631-.8916 2.5576-1.9219l.5-1.3086c.0215-.0557.0264-.1113.0147-.167-.5645-2.5533-2.8408-4.458-5.5615-4.458-2.5088 0-4.6377 1.6182-5.4102 3.8672-.4981-.373-1.1338-.5733-1.8203-.5069-1.2158.1211-2.1924 1.0977-2.3135 2.3135-.0312.3145-.0078.6191.0645.9053C1.583 13.1758 0 14.7871 0 16.7607c0 .1787.0137.3535.0391.5254.0117.0859.0849.1494.1718.1494h16.0225c.0947 0 .1826-.0664.2109-.1582l.0645-.4326z" />
-                  </svg>
-                  {t('footer.deployCloudflare')}
-                </a>
-             </div>
              <div className="flex flex-col sm:flex-row justify-center items-center gap-x-6 gap-y-4">
                 <a
                   href="https://github.com/yaoleifly/geministocks"

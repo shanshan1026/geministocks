@@ -43,7 +43,7 @@ const AnalysisInput: React.FC<AnalysisInputProps> = ({ userInput, setUserInput, 
         <button
           onClick={onAnalyze}
           disabled={isLoading || !userInput.trim()}
-          className="relative inline-flex items-center gap-2 px-8 py-3 btn-premium text-white text-base font-medium rounded-xl group overflow-hidden shadow-lg hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:shadow-lg disabled:-translate-y-0 disabled:hover:shadow-lg"
+          className="relative inline-flex items-center gap-2 overflow-hidden rounded-xl border border-emerald-300 bg-emerald-200 px-8 py-3 text-base font-medium text-emerald-950 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-emerald-300 hover:shadow-elevated active:scale-95 disabled:cursor-not-allowed disabled:opacity-50 disabled:shadow-lg disabled:-translate-y-0 disabled:hover:bg-emerald-200 disabled:hover:shadow-lg"
         >
           <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"></div>
           {isLoading ? (
