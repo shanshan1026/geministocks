@@ -141,7 +141,7 @@ async function callOpenRouterAI(prompt: string, systemInstruction: string, model
         };
         if (isOpenRouter) {
             headers['HTTP-Referer'] = window.location.origin;
-            headers['X-Title'] = 'Super Digger';
+            headers['X-Title'] = 'Market Analysis Agent';
         }
 
         // First attempt with JSON mode; if the provider rejects it, retry without it.

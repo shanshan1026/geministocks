@@ -29,31 +29,15 @@ const AppHeader: React.FC<AppHeaderProps> = ({ apiConfigured, onOpenUserGuide, o
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Left side: Logo & Title */}
-          <div className="flex items-center gap-x-3">
-            <RadarIcon className="w-8 h-8 text-black" />
-            <h1 className="text-xl font-semibold text-gray-800">
+          <div className="flex min-w-0 items-center gap-x-2 sm:gap-x-3">
+            <RadarIcon className="h-7 w-7 shrink-0 text-black sm:h-8 sm:w-8" />
+            <h1 className="truncate whitespace-nowrap text-base font-semibold text-gray-800 sm:text-xl">
               {t('header.title')}
             </h1>
           </div>
 
           {/* Right side: Controls */}
-          <div className="flex items-center gap-x-4 sm:gap-x-6">
-            <a
-              href="https://h5.fotechwealth.com/pages/startAccount.html?channel=030003&aeCode=B2&invitationCode=997NQD&langType=zhCn"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-x-1.5 text-xs sm:text-sm font-medium bg-blue-50 text-blue-600 px-3 py-1 rounded-full hover:bg-blue-100 transition-colors border border-blue-200 shadow-sm"
-            >
-              <span>{locale === 'zh' ? '开户' : 'Open Account'}</span>
-            </a>
-            <a
-              href="https://stocks.mastersgo.cc"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-x-1.5 text-xs sm:text-sm font-medium bg-blue-50 text-blue-600 px-3 py-1 rounded-full hover:bg-blue-100 transition-colors border border-blue-200 shadow-sm"
-            >
-              <span>{locale === 'zh' ? '图谱' : 'Industry Map'}</span>
-            </a>
+          <div className="flex shrink-0 items-center gap-x-2 sm:gap-x-6">
             <button
               onClick={onOpenUserGuide}
               className="hidden sm:flex items-center gap-x-1.5 text-sm font-medium text-gray-600 hover:text-black transition-colors"
@@ -65,10 +49,10 @@ const AppHeader: React.FC<AppHeaderProps> = ({ apiConfigured, onOpenUserGuide, o
             {/* API Settings button */}
             <button
               onClick={onOpenApiSettings}
-              className={`flex items-center gap-x-1.5 text-xs sm:text-sm font-medium px-3 py-1 rounded-full border shadow-sm transition-colors ${
+              className={`flex items-center gap-x-1.5 rounded-full border px-2.5 py-1 text-xs font-medium shadow-sm transition-colors sm:px-3 sm:text-sm ${
                 apiConfigured
                   ? 'bg-white text-gray-700 border-gray-300 hover:border-gray-500'
-                  : 'bg-amber-50 text-amber-700 border-amber-300 hover:bg-amber-100'
+                  : 'bg-sky-50 text-sky-700 border-sky-300 hover:bg-sky-100'
               }`}
               aria-label={locale === 'zh' ? '模型 API 设置' : 'Model API Settings'}
             >
